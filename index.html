@@ -272,54 +272,49 @@
   </div>
 </section>
 <!-- INTERACTIVE LABS & PRACTICE -->
-<section class="section tools" id="labs">
+<style>
+.labs-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,280px));gap:16px}
+.lab{display:block;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px;transition:transform .2s,box-shadow .2s}
+.lab:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.lab-img{height:140px;border-radius:8px;overflow:hidden;margin-bottom:12px;background:linear-gradient(135deg,#031b2e,#0a4a6e)}
+.lab-img.mock{background:linear-gradient(135deg,#06324f,#0a7a9b)}
+.lab-img svg{display:block;width:100%;height:100%}
+.lab h4{margin:0 2px 3px;font:800 15px/1.25 Manrope,Inter,sans-serif;color:#0d3551}
+.lab p{margin:0 2px 4px;font-size:11px;color:#728394}
+</style>
+<section class="section" id="labs">
   <div class="container">
     <div class="section-title"><div><h2>Interactive Labs &amp; Practice</h2><p>Hands-on simulators and exam practice for radiology physics</p></div></div>
-    <div class="tool-grid">
+    <div class="labs-row">
 
-      <a class="tool-card" href="Contrast.html">
-        <div class="tool-art">
-          <svg viewBox="0 0 360 190" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+      <a class="lab" href="Contrast.html">
+        <div class="lab-img">
+          <svg viewBox="0 0 280 140" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
             <defs><linearGradient id="bolusG" x1="0" x2="1"><stop offset="0" stop-color="#ff6b00"/><stop offset="1" stop-color="#ffc08a"/></linearGradient></defs>
-            <g stroke="#ffffff22"><path d="M180 150H345M180 110H345M180 70H345"/></g>
-            <circle cx="95" cy="95" r="62" fill="none" stroke="#38bdf8" stroke-width="11" opacity=".85"/>
-            <circle cx="95" cy="95" r="40" fill="#06253c" stroke="#38bdf8" stroke-width="2"/>
-            <path d="M62 135Q95 70 128 135" fill="none" stroke="#ffffff66" stroke-width="3" stroke-linecap="round"/>
-            <path d="M190 150C220 150 228 48 258 48S305 128 340 128" fill="none" stroke="url(#bolusG)" stroke-width="5" stroke-linecap="round"/>
-            <circle cx="258" cy="48" r="8" fill="#fff7ed"/><circle cx="258" cy="48" r="16" fill="#ff6b00" opacity=".25"/>
-            <text x="192" y="174" fill="#9fb6c9" font-size="10" font-family="Inter,Arial,sans-serif">Enhancement vs time</text>
+            <g stroke="#ffffff22"><path d="M140 112H262M140 82H262M140 52H262"/></g>
+            <circle cx="72" cy="70" r="44" fill="none" stroke="#38bdf8" stroke-width="9" opacity=".9"/>
+            <circle cx="72" cy="70" r="28" fill="#06253c" stroke="#38bdf8" stroke-width="2"/>
+            <path d="M48 98Q72 52 96 98" fill="none" stroke="#ffffff66" stroke-width="3" stroke-linecap="round"/>
+            <path d="M148 112C170 112 176 34 198 34S234 94 260 94" fill="none" stroke="url(#bolusG)" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="198" cy="34" r="6" fill="#fff7ed"/><circle cx="198" cy="34" r="12" fill="#ff6b00" opacity=".25"/>
           </svg>
-          <span class="tool-badge">Interactive Simulator</span>
         </div>
-        <div class="tool-body">
-          <h3>Contrast Lab</h3>
-          <p class="tool-sub">Contrast Transit &amp; Injection Physics Simulator</p>
-          <p>Follow the contrast bolus from the arm vein to the aorta and see how flow rate changes scan timing.</p>
-          <div class="chips"><span>CT</span><span>Bolus timing</span><span>Injection rate</span></div>
-          <span class="tool-cta">Open Simulator &rarr;</span>
-        </div>
+        <h4>Contrast Lab</h4><p>Interactive Simulator</p>
       </a>
 
-      <a class="tool-card" href="mock-test/index.html">
-        <div class="tool-art art-mock">
-          <svg viewBox="0 0 360 190" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-            <rect x="40" y="24" width="150" height="142" rx="10" fill="#fff"/>
-            <g fill="#d7e5ef"><rect x="88" y="46" width="86" height="8" rx="4"/><rect x="88" y="76" width="70" height="8" rx="4"/><rect x="88" y="106" width="80" height="8" rx="4"/><rect x="88" y="136" width="56" height="8" rx="4"/></g>
-            <g fill="none" stroke="#1a9d5a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M56 51l5 5 9-11"/><path d="M56 81l5 5 9-11"/><path d="M56 111l5 5 9-11"/></g>
-            <rect x="56" y="132" width="14" height="14" rx="3" fill="none" stroke="#0a7a9b" stroke-width="2"/>
-            <circle cx="272" cy="95" r="44" fill="none" stroke="#ffffff30" stroke-width="12"/>
-            <circle cx="272" cy="95" r="44" fill="none" stroke="#19d3e6" stroke-width="12" stroke-linecap="round" stroke-dasharray="235 277" transform="rotate(-90 272 95)"/>
-            <text x="272" y="103" text-anchor="middle" fill="#fff" font-size="23" font-weight="800" font-family="Inter,Arial,sans-serif">85%</text>
+      <a class="lab" href="mock-test/index.html">
+        <div class="lab-img mock">
+          <svg viewBox="0 0 280 140" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <rect x="30" y="18" width="118" height="104" rx="8" fill="#fff"/>
+            <g fill="#d7e5ef"><rect x="68" y="35" width="66" height="7" rx="3.5"/><rect x="68" y="58" width="52" height="7" rx="3.5"/><rect x="68" y="81" width="60" height="7" rx="3.5"/><rect x="68" y="104" width="42" height="7" rx="3.5"/></g>
+            <g fill="none" stroke="#1a9d5a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M42 38l4 4 7-9"/><path d="M42 61l4 4 7-9"/><path d="M42 84l4 4 7-9"/></g>
+            <rect x="42" y="102" width="11" height="11" rx="2.5" fill="none" stroke="#0a7a9b" stroke-width="1.8"/>
+            <circle cx="213" cy="70" r="34" fill="none" stroke="#ffffff30" stroke-width="10"/>
+            <circle cx="213" cy="70" r="34" fill="none" stroke="#19d3e6" stroke-width="10" stroke-linecap="round" stroke-dasharray="182 214" transform="rotate(-90 213 70)"/>
+            <text x="213" y="77" text-anchor="middle" fill="#fff" font-size="19" font-weight="800" font-family="Inter,Arial,sans-serif">85%</text>
           </svg>
-          <span class="tool-badge">Exam Practice</span>
         </div>
-        <div class="tool-body">
-          <h3>Mock Test Centre</h3>
-          <p class="tool-sub">Radiology Physics Mock Exam</p>
-          <p>Timed physics papers with a question palette, review marking, instant explanations and topic-wise results.</p>
-          <div class="chips"><span>7 papers</span><span>Timer</span><span>Autosave</span></div>
-          <span class="tool-cta">Start Practice &rarr;</span>
-        </div>
+        <h4>Mock Test Centre</h4><p>Practice Exams</p>
       </a>
 
     </div>
